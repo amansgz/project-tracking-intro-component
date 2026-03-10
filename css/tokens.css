@@ -9,6 +9,31 @@
   --clr-blue-100: #eef3f6;
   --clr-white: #fff;
 
+  /* Color variations */
+  /* Lightness variations */
+  --clr-blue-950-dark: #5b67a4;
+  --clr-blue-950-light: #7a85b8;
+
+  /* Colors Texts */
+  --clr-text-dark: var(--clr-blue-950);
+  --clr-text-light: var(--clr-blue-950-light);
+  --clr-text-white: var(--clr-white);
+
+  /* Colors Backgrounds */
+  --clr-bg-dark: var(--clr-blue-950);
+  --clr-bg-light: var(--clr-blue-100);
+  --clr-bg-primary: var(--clr-red-400);
+  --clr-bg-white: var(--clr-white);
+
+  /* Colors Lines */
+  --clr-divider: var(--clr-blue-950-light);
+
+  /* Color Borders */
+  --clr-border-dark: var(--clr-blue-950);
+
+  /* Colors interactive states */
+  --clr-primary: var(--clr-red-400);
+
   /* Typography */
   --ff-primary:
     "Barlow Condensed", sans-serif; /* Headings, Call-to-actions, Navigation. Font weights: 400, 700*/
