@@ -36,6 +36,11 @@
   --space-3xl: 5rem; /* 90px  */
   --space-4xl: 6rem; /* 108px  */
 
+  /* Spacing Containers */
+  --container-padding: var(--space-lg);
+  --container-max-width: 75rem;
+  --container-margin: 0 auto;
+
   /* Border Radius */
   --radius-xs: 2px;
   --radius-sm: 4px;
