@@ -16,4 +16,16 @@
   --fs-lg: clamp(1.2rem, 2.5vw, 1.8rem); /* 19px - 39px */
   --fs-xl: clamp(1.5rem, 4vw, 2.5rem); /* 24px - 55px */
   --fs-2xl: clamp(2.5rem, 5vw, 3rem); /* 32px - 66px */
+
+  /* Spacings */
+  --space-xxs: 0.25rem; /* 4.5px  */
+  --space-xs: 0.5rem; /* 9px  */
+  --space-sm: 0.75rem; /* 13.5px */
+  --space-base: 1rem; /* 18px  */
+  --space-md: 1.5rem; /* 27px  */
+  --space-lg: 2rem; /* 36px  */
+  --space-xl: 3rem; /* 54px  */
+  --space-2xl: 4rem; /* 72px  */
+  --space-3xl: 5rem; /* 90px  */
+  --space-4xl: 6rem; /* 108px  */
 }
