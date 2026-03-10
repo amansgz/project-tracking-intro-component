@@ -14,11 +14,56 @@
 </head>
 
 <body>
-  Product
-  Features
-  Pricing
-  Login
+  <header class="header">
 
+    <div class="container  header__container">
+
+      <!-- Logo -->
+      <img class="header__logo" src="./assets/images/logo.svg" alt="Logo" width="32" height="32">
+
+      <!-- Main Navigation -->
+      <nav class="nav  header__nav" aria-label="Main navigation">
+
+        <!-- Mobile hamburger button -->
+        <button class="nav__toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+          aria-controls="main-menu">
+
+          <img class="nav__toggle-icon  nav__toggle-icon--hamburger" src="./assets/images/icon-hamburger.svg" alt=""
+            width="24" height="16" aria-hidden="true">
+
+          <img class="nav__toggle-icon  nav__toggle-icon--close" src="./assets/images/icon-close.svg" alt="" width="20"
+            height="20" aria-hidden="true">
+        </button>
+
+        <!-- Menu Navigation -->
+        <ul class="nav__list" id="main-menu">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Product</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Features</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Pricing</a>
+          </li>
+          <li class="nav__item  nav__item--divider" aria-hidden="true" role="separator"></li>
+          <li class="nav__item">
+            <a class="nav__link  nav__link--primary" href="#">Login</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+
+</body>
+
+</html>
+
+<!-- 
   New
   Monograph Dashboard
 
@@ -34,6 +79,4 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
-</body>
-
-</html>
+-->
