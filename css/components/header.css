@@ -1,3 +1,21 @@
 /*  ========================================
     header.css 
     ======================================== */
+
+.header {
+  padding-block: var(--space-md);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  inline-size: 1.5rem;
+}
+
+.header__nav {
+  position: relative; /* for nav list */
+}

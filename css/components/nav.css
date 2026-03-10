@@ -1,3 +1,126 @@
 /*  ========================================
     nav.css 
     ======================================== */
+
+/* -------------------
+    Mobile navigation
+    ------------------*/
+
+/* Hamburger button */
+.nav__toggle {
+  position: relative; /* for icons */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  inline-size: 1.33rem;
+  block-size: 1.33rem;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.nav__toggle-icon {
+  position: absolute; /* if overlapping */
+
+  inline-size: 1.25rem;
+  block-size: auto;
+
+  transition: opacity 0.3s ease;
+}
+
+.nav__toggle-icon--close {
+  opacity: 0;
+  pointer-events: none; /* prevents clicking hidden icon */
+}
+
+/* Toggle icons based on aria-expanded state */
+.nav__toggle[aria-expanded="true"] .nav__toggle-icon--hamburger {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav__toggle[aria-expanded="true"] .nav__toggle-icon--close {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav__toggle-icon,
+  .nav__toggle-icon--hamburger,
+  .nav__toggle-icon--close {
+    transition: none;
+  }
+}
+
+/* Menu navigation */
+
+.nav__list {
+  /* Hidden by default */
+  opacity: 0;
+  visibility: hidden;
+
+  position: absolute;
+  inset-block-start: 100%;
+  inset-inline-end: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+
+  inline-size: min(28rem, 85vw);
+
+  margin-block-start: var(--space-md);
+  padding: var(--space-lg);
+
+  background-color: var(--clr-bg-white);
+  border-radius: var(--radius-xs);
+  text-align: center;
+
+  transform: translateY(-10px);
+
+  box-shadow: var(--shadow-md);
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease;
+  z-index: 15;
+}
+
+/* Show menu when button has aria-expanded="true" */
+.nav__toggle[aria-expanded="true"] + .nav__list {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav__list {
+    transition: none;
+  }
+}
+
+/* Menu navigation links */
+.nav__link {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  color: var(--clr-text-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+}
+
+.nav__link--primary {
+  color: var(--clr-text-light);
+}
+
+/* Divider */
+.nav__item--divider {
+  inline-size: 100%;
+  block-size: 1px;
+  background-color: var(--clr-divider);
+  margin: var(--space-xs) 0;
+}
