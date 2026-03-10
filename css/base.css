@@ -74,3 +74,14 @@ body {
   line-height: 1.5;
   background-color: var(--color-bg-light);
 }
+
+/* -----------------------------------
+  4. BASE UTILITIES
+  ------------------------------------ */
+
+.container {
+  max-inline-size: var(--container-max-width);
+  margin: var(--container-margin);
+  padding: 0 var(--container-padding);
+  inline-size: 100%;
+}
