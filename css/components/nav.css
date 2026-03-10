@@ -124,3 +124,59 @@
   background-color: var(--clr-divider);
   margin: var(--space-xs) 0;
 }
+
+/* -----------------
+  Media queries 
+  -----------------*/
+@media (min-width: 48rem) {
+  /* Hide hamburger button on desktop */
+  .nav__toggle {
+    display: none;
+  }
+
+  /* Menu always visible on desktop */
+  .nav__list {
+    opacity: 1;
+    visibility: visible;
+
+    position: static;
+
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: var(--space-md);
+
+    margin-block-start: 0;
+    padding: 0;
+
+    background-color: transparent;
+    transform: none;
+    box-shadow: none;
+  }
+
+  .nav__link {
+    transition: text-decoration 0.3s ease;
+  }
+
+  .nav__link:hover {
+    text-decoration: underline;
+  }
+
+  /* Focus state for accessibility */
+  .nav__link:focus-visible {
+    outline: 2px solid var(--clr-border-dark);
+    outline-offset: 4px;
+    border-radius: var(--radius-xs);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .nav__link {
+      transition: none;
+    }
+  }
+
+  .nav__item--divider {
+    inline-size: 0.55rem;
+    block-size: 0.55rem;
+    border-radius: var(--radius-md);
+  }
+}

@@ -19,3 +19,28 @@
 .header__nav {
   position: relative; /* for nav list */
 }
+
+/* -----------------
+  Media queries 
+  -----------------*/
+@media (min-width: 48rem) {
+  .header {
+    padding-block: var(--space-xl);
+  }
+
+  .header__container {
+    gap: var(--space-xxl);
+  }
+
+  .header__nav {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+/* Large screens adjustments */
+@media (min-width: 75rem) {
+  .header {
+    padding-block: var(--space-xl);
+  }
+}
