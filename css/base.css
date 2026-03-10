@@ -68,6 +68,7 @@ html {
 }
 
 body {
+  font-family: var(--ff-body);
   font-size: var(--fs-base);
   font-weight: var(--fw-regular);
   color: var(--color-text-dark);
