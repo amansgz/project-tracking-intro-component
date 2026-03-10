@@ -1,0 +1,31 @@
+/*  ========================================
+    footer.css 
+    ======================================== */
+
+.footer {
+  padding-block: var(--space-sm);
+  text-align: center;
+}
+
+.attribution {
+  font-size: var(--fs-sm);
+}
+
+.attribution__link {
+  transition: text-decoration 0.3s ease;
+}
+
+.attribution__link:hover {
+  text-decoration: underline;
+}
+
+.attribution__link:focus-visible {
+  outline: 3px solid var(--clr-border-dark);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .attribution__link {
+    transition: none;
+  }
+}
