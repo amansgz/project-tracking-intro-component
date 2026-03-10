@@ -12,3 +12,14 @@ document.querySelectorAll(".nav__link").forEach((link) => {
     navToggle.setAttribute("aria-expanded", "false");
   });
 });
+
+// Close menu with ESC key
+document.addEventListener("keydown", (e) => {
+  if (
+    e.key === "Escape" &&
+    navToggle.getAttribute("aria-expanded") === "true"
+  ) {
+    navToggle.setAttribute("aria-expanded", "false");
+    navToggle.focus();
+  }
+});
