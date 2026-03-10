@@ -4,10 +4,10 @@
 
 :root {
   /* Base Colors */
-  --red-400: #ff5c5c;
-  --blue-950: #242942;
-  --blue-100: #eef3f6;
-  --white: #fff;
+  --clr-red-400: #ff5c5c;
+  --clr-blue-950: #242942;
+  --clr-blue-100: #eef3f6;
+  --clr-white: #fff;
 
   /* Typography */
   --ff-primary:
